@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_margin="6dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sport"
+            android:text="sport"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/business"
+            android:text="business"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/health"
+            android:text="health"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/entertainment"
+            android:text="entertainment" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/science"
+            android:text="science"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/technology"
+            android:text="technology"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/general"
+            android:text="general"/>
+    </LinearLayout>
+</HorizontalScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+
+            app:iconifiedByDefault="false"
+            android:layout_height="?attr/actionBarSize"
+            app:defaultQueryHint="Search content"
+            android:id="@+id/serach"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_container"
+        android:layout_margin="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
